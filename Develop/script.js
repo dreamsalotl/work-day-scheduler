@@ -6,7 +6,11 @@ $(function () {
     var timeBlockId = $(this).parent().attr("id");
     var description = $(this).siblings(".description").val();
     var dateAdded = dayjs().format("dddd, MMMM Do YYYY, h:mm:ss a");
-    events.push({description: description, time: timeBlockId, date: dateAdded});
+    events.push({
+      description: description,
+      time: timeBlockId,
+      date: dateAdded,
+    });
     localStorage.setItem("events", JSON.stringify(events));
     alert("Event saved!");
   });
@@ -56,10 +60,10 @@ $(function () {
   // Displays events from local storage
   for (var i = 0; i < events.length; i++) {
     var userDescription = events[i].description;
-    $("#" + events[i].time).children(".description").val(userDescription);
+    $("#" + events[i].time)
+      .children(".description")
+      .val(userDescription);
   }
   // Displays the current day at the top of the page
   $("#currentDay").text(currentDay);
 });
-
-
