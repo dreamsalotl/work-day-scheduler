@@ -12,7 +12,7 @@ No installation necessary, just click this link: https://dreamsalotl.github.io/w
 
 Type whatever you want into each time block and click the save icon to save it to your local storage. To overwrite, just delete the text and click the save icon again.
 
-![Alt text](Assets\images\image.png)
+![Alt text](./Assets/images/image.png)
 
 ## Credits
 
