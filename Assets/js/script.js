@@ -31,7 +31,7 @@ $(function () {
   }
 
   updateHour();
-  // Sets the time interval to 15 seconds
+  // Sets the time interval to 15 seconds, and updates the hour every 15 seconds
   var secondsLeft = 15;
   function setTime() {
     var timerInterval = setInterval(function () {
